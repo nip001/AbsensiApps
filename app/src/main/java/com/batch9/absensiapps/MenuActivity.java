@@ -36,5 +36,20 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        btnHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(MenuActivity.this,HistoryActivity.class);
+                i.putExtra("username",getIntent().getStringExtra("username"));
+                startActivity(i);
+            }
+        });
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

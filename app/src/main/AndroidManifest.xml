@@ -3,8 +3,8 @@
     package="com.batch9.absensiapps">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AbsensiApps"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="true" />
         <activity
             android:name=".CheckInActivity"
             android:exported="true" />
