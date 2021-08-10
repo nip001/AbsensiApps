@@ -21,10 +21,9 @@ public class ModelAbsensi implements ModelAbsensiInterface{
 	}
 
 	@Override
-	public String addAbsensi(Absensi absensi) {
+	public Absensi  addAbsensi(Absensi absensi) {
 		// TODO Auto-generated method stub
-		this.aRepo.save(absensi);
-		return "Berhasil menyimpan";
+		return this.aRepo.save(absensi);
 	}
 
 	@Override

@@ -49,7 +49,8 @@ public class AbsensiController {
 	
 
 	@PostMapping("/absen")
-	public ResponseEntity<String> addAbsen(@RequestParam(value = "file") MultipartFile images, @ModelAttribute(value="data") String dataJSON) throws IOException{
+	public ResponseEntity<Absensi> addAbsen(@RequestParam(value = "file") MultipartFile images, @ModelAttribute(value="data") String dataJSON) throws IOException{
+
 		Date tanggal = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");  
 		String strDate = formatter.format(tanggal);  

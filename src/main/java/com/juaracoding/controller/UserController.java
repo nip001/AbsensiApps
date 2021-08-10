@@ -44,7 +44,7 @@ public class UserController {
 	
 	@GetMapping("/login")
 	public ResponseEntity<Integer> validateLogin(@RequestParam String username, @RequestParam String password){
-		
+	
 		return ResponseEntity.status(HttpStatus.OK)
 				.contentType(MediaType.APPLICATION_JSON)
 				.body(this.uModel.validasiUser(username, password));
